@@ -1,0 +1,8 @@
+app/code/community/MobWeb/SwitchDefaultCountryByURL app/code/community/MobWeb/SwitchDefaultCountryByURL/
+
+app/code/local/Mage/Checkout/Block/Onepage/Abstract.php app/code/local/Mage/Checkout/Block/Onepage/Abstract.php
+
+app/etc/modules/MobWeb_SwitchDefaultCountryByURL.xml app/etc/modules/MobWeb_SwitchDefaultCountryByURL.xml
+
+# Clear the cache
+@shell   rm -rf $PROJECT/var/cache/* && echo "Magento Cache cleared"

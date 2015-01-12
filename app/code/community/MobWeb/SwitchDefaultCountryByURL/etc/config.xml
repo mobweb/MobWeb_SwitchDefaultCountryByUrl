@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_SwitchDefaultCountryByURL>
+            <version>0.1.0</version>
+        </MobWeb_SwitchDefaultCountryByURL>
+    </modules>
+    <global>
+        <models>
+            <switchdefaultcountrybyurl>
+                <class>MobWeb_SwitchDefaultCountryByURL_Model</class>
+            </switchdefaultcountrybyurl>
+        </models>
+        <helpers>
+            <switchdefaultcountrybyurl>
+                <class>MobWeb_SwitchDefaultCountryByURL_Helper</class>
+            </switchdefaultcountrybyurl>
+        </helpers>
+    </global>
+    <frontend>
+        <events>
+            <controller_action_layout_load_before>
+                <observers>
+                    <switchdefaultcountrybyurl>
+                        <type>singleton</type>
+                        <class>switchdefaultcountrybyurl/observer</class>
+                        <method>controllerActionLayoutLoadBefore</method>
+                    </switchdefaultcountrybyurl>
+                </observers>
+            </controller_action_layout_load_before>
+        </events>
+    </frontend>
+</config>
